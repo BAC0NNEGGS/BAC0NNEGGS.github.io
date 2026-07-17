@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Interest List | The Langford, Newport News VA</title>
+<meta name="description" content="Contact The Langford leasing team or join the interest list to be notified when waterfront apartments in Newport News, VA become available.">
+<link rel="canonical" href="https://www.thelangfordnn.example/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact &amp; Interest List | The Langford">
+<meta property="og:description" content="Join the interest list for The Langford, a waterfront apartment community in Newport News, VA.">
+<meta property="og:image" content="https://www.thelangfordnn.example/assets/img/og-share.jpg">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo.png" alt="The Langford logo" width="46" height="46">
+      <span class="brand-text"><span class="brand-the">The</span><span class="brand-name">Langford</span></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="apartments.html">Apartments</a>
+      <a href="amenities.html">Amenities</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="location.html">Location</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="contact.html#interest-form" class="nav-cta">Join Interest List</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="page-hero-media"><img src="assets/img/hero-contact.jpg" alt="" aria-hidden="true"></div>
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html" style="color:inherit;">Home</a><span>/</span><span>Contact</span></div>
+      <h1>Get in Touch</h1>
+      <p class="lede" style="margin-top:18px;">Have a question, or want to be first in line when leasing opens? Reach out or join the interest list below.</p>
+    </div>
+  </section>
+
+  <section class="section section-off" id="interest-form">
+    <div class="container contact-grid">
+
+      <div class="reveal">
+        <span class="eyebrow">Leasing Office</span>
+        <h2 style="margin-top:14px;">The Langford</h2>
+        <div class="contact-info-item" style="border-color:var(--line);">
+          <div>
+            <h4>Address</h4>
+            <p style="margin-top:4px;">750 Waters Edge Way<br>Newport News, VA 23607</p>
+          </div>
+        </div>
+        <div class="contact-info-item" style="border-color:var(--line);">
+          <div>
+            <h4>Phone</h4>
+            <p style="margin-top:4px;"><a href="tel:+17575550142" style="color:var(--teal-500);">(757) 555-0142</a></p>
+          </div>
+        </div>
+        <div class="contact-info-item" style="border-color:var(--line);">
+          <div>
+            <h4>Email</h4>
+            <p style="margin-top:4px;"><a href="mailto:leasing@thelangford.example" style="color:var(--teal-500);">leasing@thelangford.example</a></p>
+          </div>
+        </div>
+        <div style="margin-top:32px; padding-top:28px; border-top:1px solid var(--line);">
+          <h4>Office Hours</h4>
+          <table class="hours-table" style="margin-top:10px;">
+            <tr><td style="color:var(--ink-soft);">Monday &ndash; Friday</td><td style="color:var(--ink);">9:00 AM &ndash; 6:00 PM</td></tr>
+            <tr><td style="color:var(--ink-soft);">Saturday</td><td style="color:var(--ink);">10:00 AM &ndash; 5:00 PM</td></tr>
+            <tr><td style="color:var(--ink-soft);">Sunday</td><td style="color:var(--ink);">Closed</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="card reveal" style="padding:clamp(28px,4vw,48px);">
+        <span class="eyebrow">Interest List</span>
+        <h2 style="margin-top:14px;">Be the First to Know</h2>
+        <p style="margin-top:12px;">Leave your details and our leasing team will notify you as soon as floor plans, pricing, and move-in dates are available.</p>
+
+        <form id="interest-form" novalidate style="margin-top:30px;">
+          <!-- Honeypot field: hidden from real users, bots often fill it -->
+          <div class="visually-hidden" aria-hidden="true">
+            <label for="website">Leave this field blank</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="moveInDate">Ideal move-in date</label>
+            <input type="date" id="moveInDate" name="moveInDate" required>
+          </div>
+
+          <div class="turnstile-wrap">
+            <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="light"></div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Join the Interest List</button>
+
+          <div class="form-status" id="form-status" aria-live="polite"></div>
+
+          <p class="field-hint" style="margin-top:16px;">By submitting, you agree to be contacted by The Langford leasing team. We never share your information with third parties.</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:18px;">
+          <img src="assets/img/logo.png" alt="The Langford logo" width="40" height="40">
+          <span class="brand-text"><span class="brand-the">The</span><span class="brand-name" style="color:#F6F4ED;">Langford</span></span>
+        </div>
+        <p style="color:rgba(251,250,246,0.72); max-width:32ch;">A waterfront apartment community on the James River in Newport News, Virginia.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="apartments.html">Apartments</a></li>
+          <li><a href="amenities.html">Amenities</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Community</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#interest-form">Interest List</a></li>
+          <li><a href="location.html">Directions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+17575550142">(757) 555-0142</a></li>
+          <li><a href="mailto:leasing@thelangford.example">leasing@thelangford.example</a></li>
+          <li>750 Waters Edge Way<br>Newport News, VA 23607</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> The Langford. All rights reserved.</p>
+      <p>Equal Housing Opportunity</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/form.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
