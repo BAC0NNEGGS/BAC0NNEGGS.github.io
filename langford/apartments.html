@@ -56,110 +56,110 @@
   <section class="section section-off">
     <div class="container">
 
-      <div class="tabs" role="tablist" aria-label="Residence types" data-tabs>
-        <button class="tab-btn" role="tab" id="tab-studio" aria-controls="panel-studio" aria-selected="true">Studio</button>
-        <button class="tab-btn" role="tab" id="tab-1br" aria-controls="panel-1br" aria-selected="false">One Bedroom</button>
-        <button class="tab-btn" role="tab" id="tab-2br" aria-controls="panel-2br" aria-selected="false">Two Bedroom</button>
-        <button class="tab-btn" role="tab" id="tab-3br" aria-controls="panel-3br" aria-selected="false">Three Bedroom</button>
-      </div>
+      <nav class="tabs" aria-label="Jump to residence type">
+        <a class="tab-btn" href="#plan-studio">Studio</a>
+        <a class="tab-btn" href="#plan-1br">One Bedroom</a>
+        <a class="tab-btn" href="#plan-2br">Two Bedroom</a>
+        <a class="tab-btn" href="#plan-3br">Three Bedroom</a>
+      </nav>
+
+      <p class="lede" style="margin-bottom:36px;">Every residence type is shown in full below — water views are available in most homes throughout the building, subject to floor and exposure.</p>
 
       <!-- Studio -->
-      <div class="tab-panel is-active" id="panel-studio" role="tabpanel" aria-labelledby="tab-studio">
-        <div class="plan-card">
-          <div class="plan-figure"><img src="assets/img/plan-studio.jpg" alt="Studio floor plan placeholder for The Cutter residence" loading="lazy"></div>
-          <div class="plan-body">
-            <span class="eyebrow">Studio</span>
-            <h2 style="margin-top:10px;">The Cutter</h2>
-            <p style="margin-top:12px;">An efficient, open layout with a defined sleeping alcove and a full kitchen along the window wall.</p>
-            <div class="plan-specs">
-              <div><span class="spec-num">Studio</span><span class="spec-label">Layout</span></div>
-              <div><span class="spec-num">1</span><span class="spec-label">Bathroom</span></div>
-              <div><span class="spec-num">Open</span><span class="spec-label">Kitchen</span></div>
-            </div>
-            <ul class="plan-features">
-              <li>Floor-to-ceiling windows</li>
-              <li>Stainless steel appliances</li>
-              <li>Quartz countertops</li>
-              <li>In-unit washer &amp; dryer</li>
-              <li>Walk-in closet</li>
-              <li>Private balcony (select homes)</li>
-            </ul>
+      <div class="plan-card" id="plan-studio" style="scroll-margin-top:100px; margin-bottom:32px;">
+        <div class="plan-figure"><img src="assets/img/plan-studio.jpg" alt="Studio floor plan placeholder for The Cutter residence" loading="lazy"></div>
+        <div class="plan-body">
+          <span class="eyebrow">Studio</span>
+          <h2 style="margin-top:10px;">The Cutter</h2>
+          <p style="margin-top:12px;">An efficient, open layout with a defined sleeping alcove and a full kitchen along the window wall.</p>
+          <div class="plan-specs">
+            <div><span class="spec-num">Studio</span><span class="spec-label">Layout</span></div>
+            <div><span class="spec-num">1</span><span class="spec-label">Bathroom</span></div>
+            <div><span class="spec-num">Open</span><span class="spec-label">Kitchen</span></div>
           </div>
+          <ul class="plan-features">
+            <li>Floor-to-ceiling windows</li>
+            <li>Water views (select homes)</li>
+            <li>Stainless steel appliances</li>
+            <li>Quartz countertops</li>
+            <li>Walk-in closet</li>
+            <li>In-unit washer &amp; dryer</li>
+            <li>Private balcony (select homes)</li>
+            <li>Keyless entry</li>
+          </ul>
         </div>
       </div>
 
       <!-- One Bedroom -->
-      <div class="tab-panel" id="panel-1br" role="tabpanel" aria-labelledby="tab-1br">
-        <div class="plan-card">
-          <div class="plan-figure"><img src="assets/img/plan-1br.jpg" alt="One bedroom floor plan placeholder for The Harborview residence" loading="lazy"></div>
-          <div class="plan-body">
-            <span class="eyebrow">One Bedroom</span>
-            <h2 style="margin-top:10px;">The Harborview</h2>
-            <p style="margin-top:12px;">A separated bedroom suite with a generous living and dining area, designed for daily comfort.</p>
-            <div class="plan-specs">
-              <div><span class="spec-num">1</span><span class="spec-label">Bedroom</span></div>
-              <div><span class="spec-num">1</span><span class="spec-label">Bathroom</span></div>
-              <div><span class="spec-num">Island</span><span class="spec-label">Kitchen</span></div>
-            </div>
-            <ul class="plan-features">
-              <li>Kitchen island with seating</li>
-              <li>Walk-in closet</li>
-              <li>Private balcony or patio</li>
-              <li>In-unit washer &amp; dryer</li>
-              <li>Water-view homes available</li>
-              <li>Wood-style plank flooring</li>
-            </ul>
+      <div class="plan-card" id="plan-1br" style="scroll-margin-top:100px; margin-bottom:32px;">
+        <div class="plan-figure"><img src="assets/img/plan-1br.jpg" alt="One bedroom floor plan placeholder for The Harborview residence" loading="lazy"></div>
+        <div class="plan-body">
+          <span class="eyebrow">One Bedroom</span>
+          <h2 style="margin-top:10px;">The Harborview</h2>
+          <p style="margin-top:12px;">A separated bedroom suite with a generous living and dining area, designed for daily comfort.</p>
+          <div class="plan-specs">
+            <div><span class="spec-num">1</span><span class="spec-label">Bedroom</span></div>
+            <div><span class="spec-num">1</span><span class="spec-label">Bathroom</span></div>
+            <div><span class="spec-num">Island</span><span class="spec-label">Kitchen</span></div>
           </div>
+          <ul class="plan-features">
+            <li>Kitchen island with seating</li>
+            <li>Walk-in closet</li>
+            <li>Water views in most homes</li>
+            <li>Private balcony or patio</li>
+            <li>In-unit washer &amp; dryer</li>
+            <li>Wood-style plank flooring</li>
+            <li>Keyless entry</li>
+          </ul>
         </div>
       </div>
 
       <!-- Two Bedroom -->
-      <div class="tab-panel" id="panel-2br" role="tabpanel" aria-labelledby="tab-2br">
-        <div class="plan-card">
-          <div class="plan-figure"><img src="assets/img/plan-2br.jpg" alt="Two bedroom floor plan placeholder for The Tidewater residence" loading="lazy"></div>
-          <div class="plan-body">
-            <span class="eyebrow">Two Bedroom</span>
-            <h2 style="margin-top:10px;">The Tidewater</h2>
-            <p style="margin-top:12px;">Split bedrooms for privacy, two full bathrooms, and an open living area that opens to a private balcony.</p>
-            <div class="plan-specs">
-              <div><span class="spec-num">2</span><span class="spec-label">Bedrooms</span></div>
-              <div><span class="spec-num">2</span><span class="spec-label">Bathrooms</span></div>
-              <div><span class="spec-num">Split</span><span class="spec-label">Layout</span></div>
-            </div>
-            <ul class="plan-features">
-              <li>Owner's suite with walk-in closet</li>
-              <li>Double-vanity primary bath</li>
-              <li>Kitchen pantry</li>
-              <li>In-unit washer &amp; dryer</li>
-              <li>Private balcony</li>
-              <li>Water-view homes available</li>
-            </ul>
+      <div class="plan-card" id="plan-2br" style="scroll-margin-top:100px; margin-bottom:32px;">
+        <div class="plan-figure"><img src="assets/img/plan-2br.jpg" alt="Two bedroom floor plan placeholder for The Tidewater residence" loading="lazy"></div>
+        <div class="plan-body">
+          <span class="eyebrow">Two Bedroom</span>
+          <h2 style="margin-top:10px;">The Tidewater</h2>
+          <p style="margin-top:12px;">Split bedrooms for privacy, two full bathrooms, and an open living area that opens to a private balcony.</p>
+          <div class="plan-specs">
+            <div><span class="spec-num">2</span><span class="spec-label">Bedrooms</span></div>
+            <div><span class="spec-num">2</span><span class="spec-label">Bathrooms</span></div>
+            <div><span class="spec-num">Split</span><span class="spec-label">Layout</span></div>
           </div>
+          <ul class="plan-features">
+            <li>Owner's suite with walk-in closet</li>
+            <li>Second bedroom walk-in closet</li>
+            <li>Double-vanity primary bath</li>
+            <li>Water views in most homes</li>
+            <li>Kitchen pantry</li>
+            <li>In-unit washer &amp; dryer</li>
+            <li>Private balcony</li>
+          </ul>
         </div>
       </div>
 
       <!-- Three Bedroom -->
-      <div class="tab-panel" id="panel-3br" role="tabpanel" aria-labelledby="tab-3br">
-        <div class="plan-card">
-          <div class="plan-figure"><img src="assets/img/plan-3br.jpg" alt="Three bedroom floor plan placeholder for The Commodore residence" loading="lazy"></div>
-          <div class="plan-body">
-            <span class="eyebrow">Three Bedroom</span>
-            <h2 style="margin-top:10px;">The Commodore</h2>
-            <p style="margin-top:12px;">The Langford's largest layout — ideal for families or roommates, with room to spread out and entertain.</p>
-            <div class="plan-specs">
-              <div><span class="spec-num">3</span><span class="spec-label">Bedrooms</span></div>
-              <div><span class="spec-num">2</span><span class="spec-label">Bathrooms</span></div>
-              <div><span class="spec-num">Corner</span><span class="spec-label">Homes</span></div>
-            </div>
-            <ul class="plan-features">
-              <li>Corner residence, extra windows</li>
-              <li>Owner's suite with walk-in closet</li>
-              <li>Large kitchen island</li>
-              <li>In-unit washer &amp; dryer</li>
-              <li>Private balcony</li>
-              <li>Additional storage closet</li>
-            </ul>
+      <div class="plan-card" id="plan-3br" style="scroll-margin-top:100px;">
+        <div class="plan-figure"><img src="assets/img/plan-3br.jpg" alt="Three bedroom floor plan placeholder for The Commodore residence" loading="lazy"></div>
+        <div class="plan-body">
+          <span class="eyebrow">Three Bedroom</span>
+          <h2 style="margin-top:10px;">The Commodore</h2>
+          <p style="margin-top:12px;">The Langford's largest layout — ideal for families or roommates, with room to spread out and entertain.</p>
+          <div class="plan-specs">
+            <div><span class="spec-num">3</span><span class="spec-label">Bedrooms</span></div>
+            <div><span class="spec-num">2</span><span class="spec-label">Bathrooms</span></div>
+            <div><span class="spec-num">Corner</span><span class="spec-label">Homes</span></div>
           </div>
+          <ul class="plan-features">
+            <li>Corner residence, extra windows</li>
+            <li>Owner's suite with walk-in closet</li>
+            <li>Walk-in closets in secondary bedrooms</li>
+            <li>Water views in most homes</li>
+            <li>Large kitchen island</li>
+            <li>In-unit washer &amp; dryer</li>
+            <li>Private balcony</li>
+            <li>Additional storage closet</li>
+          </ul>
         </div>
       </div>
 
@@ -212,7 +212,7 @@
         <ul>
           <li><a href="tel:+17575550142">(757) 555-0142</a></li>
           <li><a href="mailto:leasing@thelangford.example">leasing@thelangford.example</a></li>
-          <li>750 Waters Edge Way<br>Newport News, VA 23607</li>
+          <li>2800 West Avenue<br>Newport News, VA 23607</li>
         </ul>
       </div>
     </div>
@@ -225,7 +225,6 @@
 
 <script src="js/nav.js" defer></script>
 <script src="js/animations.js" defer></script>
-<script src="js/tabs.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>

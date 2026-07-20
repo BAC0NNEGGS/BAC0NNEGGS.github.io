@@ -265,6 +265,12 @@
   color: var(--navy-800);
 }
 
+/* On dark sections (e.g. homepage interest band), labels must stay legible */
+.section-navy .form-field label,
+.interest-band .form-field label {
+  color: var(--off-white);
+}
+
 .form-field input {
   padding: 14px 16px;
   border: 1px solid var(--line);
