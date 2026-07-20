@@ -97,7 +97,7 @@
   background: var(--navy-900);
   color: var(--paper) !important;
   padding: 11px 22px !important;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   font-weight: 600 !important;
   letter-spacing: 0.03em;
   transition: background 0.25s var(--ease), transform 0.25s var(--ease);
@@ -159,16 +159,17 @@
   font-size: 0.86rem;
   font-weight: 600;
   letter-spacing: 0.03em;
-  border-radius: 2px;
-  transition: background 0.25s var(--ease), color 0.25s var(--ease), border-color 0.25s var(--ease), transform 0.2s var(--ease);
+  border-radius: var(--radius-sm);
+  transition: background 0.25s var(--ease), color 0.25s var(--ease), border-color 0.25s var(--ease), transform 0.2s var(--ease), box-shadow 0.25s var(--ease);
   white-space: nowrap;
 }
 
 .btn-primary {
   background: var(--lime-500);
   color: var(--navy-900);
+  box-shadow: 0 10px 24px rgba(183, 197, 31, 0.28);
 }
-.btn-primary:hover { background: var(--lime-600); transform: translateY(-1px); }
+.btn-primary:hover { background: var(--lime-600); transform: translateY(-2px); box-shadow: 0 16px 32px rgba(183, 197, 31, 0.34); }
 
 .btn-outline {
   border: 1px solid var(--line-light);
@@ -219,12 +220,15 @@
 .card {
   background: var(--paper);
   border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
 }
 
 .stat-card {
-  padding: 28px 24px;
-  border-top: 2px solid var(--lime-500);
+  padding: 30px 26px;
+  border-top: 3px solid var(--gold-500);
   background: var(--off-white);
+  border-radius: var(--radius-sm);
 }
 .stat-card .stat-figure {
   font-family: var(--font-display);
@@ -237,7 +241,91 @@
   margin-top: 6px;
 }
 
-/* ---------- Reveal-on-scroll ---------- */
+/* ---------- Booking-style inquiry widget (hero) ---------- */
+.booking-widget {
+  background: var(--paper);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lift);
+  padding: 28px clamp(20px, 3vw, 32px);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 18px;
+  align-items: end;
+  color: var(--ink);
+}
+.booking-widget .bw-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.booking-widget .bw-field label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-600);
+}
+.booking-widget select,
+.booking-widget input {
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--off-white);
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+.booking-widget select:focus,
+.booking-widget input:focus { border-color: var(--gold-500); }
+.booking-widget .btn { width: 100%; justify-content: center; }
+
+@media (max-width: 900px) {
+  .booking-widget { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .booking-widget { grid-template-columns: 1fr; padding: 22px; }
+}
+
+/* ---------- Trust / rating strip ---------- */
+.trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 30px;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.trust-item .trust-figure {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--navy-900);
+}
+.trust-item .trust-label {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  max-width: 16ch;
+  line-height: 1.3;
+}
+.stars {
+  color: var(--gold-500);
+  letter-spacing: 2px;
+  font-size: 0.95rem;
+}
+
+/* ---------- Section script accent (resort-style flourish) ---------- */
+.script-accent {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold-600);
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 6px;
+}
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -275,7 +363,7 @@
   padding: 14px 16px;
   border: 1px solid var(--line);
   background: var(--paper);
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   font-size: 1rem;
   transition: border-color 0.2s var(--ease);
 }
@@ -365,8 +453,8 @@
   font-family: var(--font-body);
 }
 
-.footer-grid li { margin-bottom: 10px; }
-.footer-grid a { color: rgba(251,250,246,0.72); font-size: 0.92rem; }
+.footer-grid li { margin-bottom: 10px; color: rgba(251,250,246,0.85); }
+.footer-grid a { color: rgba(251,250,246,0.85); font-size: 0.92rem; }
 .footer-grid a:hover { color: var(--lime-500); }
 
 .footer-bottom {
@@ -377,7 +465,7 @@
   gap: 12px;
   padding-top: 28px;
   font-size: 0.78rem;
-  color: rgba(251,250,246,0.5);
+  color: rgba(251,250,246,0.9);
 }
 
 /* ---------- Gallery lightbox ---------- */

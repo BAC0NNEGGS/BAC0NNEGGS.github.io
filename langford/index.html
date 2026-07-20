@@ -70,7 +70,7 @@
     </div>
     <div class="container hero-inner">
       <div class="hero-badge">
-        <img src="assets/img/logo.png" alt="" width="54" height="54">
+        <img src="assets/img/logo-white.png" alt="" width="54" height="54">
       </div>
       <h1>Modern Coastal Living, Right on the James River</h1>
       <p class="lede">The Langford brings waterfront residences to Newport News — minutes from Newport News Shipbuilding, area naval facilities, and Interstate 64.</p>
@@ -88,14 +88,61 @@
     <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
   </section>
 
+  <!-- Booking-style inquiry widget, overlapping hero -->
+  <div class="container" style="position:relative; z-index:20;">
+    <div class="booking-widget reveal" style="margin-top:-56px;">
+      <div class="bw-field">
+        <label for="bw-type">Residence Type</label>
+        <select id="bw-type" name="type">
+          <option>Studio</option>
+          <option>One Bedroom</option>
+          <option>Two Bedroom</option>
+          <option>Three Bedroom</option>
+        </select>
+      </div>
+      <div class="bw-field">
+        <label for="bw-date">Ideal Move-In</label>
+        <input type="date" id="bw-date" name="date">
+      </div>
+      <div class="bw-field">
+        <label for="bw-contact">Email</label>
+        <input type="email" id="bw-contact" name="email" placeholder="you@email.com">
+      </div>
+      <a href="contact.html#interest-form" class="btn btn-primary">Check Availability</a>
+    </div>
+  </div>
+
+  <!-- Trust strip -->
+  <section class="section-off" style="padding-top:88px;">
+    <div class="container trust-strip">
+      <div class="trust-item">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="trust-label">Designed to resort-caliber hospitality standards</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-figure">4</span>
+        <span class="trust-label">Residence types, studio through three bedroom</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-figure">2 mi</span>
+        <span class="trust-label">To Newport News Shipbuilding</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-figure">24/7</span>
+        <span class="trust-label">On-site amenities &amp; services</span>
+      </div>
+    </div>
+  </section>
+
   <!-- About -->
-  <section class="section section-off">
+  <section class="section section-off" style="padding-top:0;">
     <div class="container grid-2">
       <div class="about-media reveal">
         <img src="assets/img/about-building.jpg" alt="Exterior view of The Langford apartment building" loading="lazy">
         <div class="media-tag">Rising along the James River waterfront</div>
       </div>
       <div class="reveal">
+        <span class="script-accent">Welcome home</span>
         <span class="eyebrow">About The Langford</span>
         <h2>A New Waterfront Address for Newport News</h2>
         <p class="lede" style="margin-top:20px;">The Langford pairs contemporary architecture with an unmatched setting — where tidewater views meet an easy commute to the region's largest employers.</p>
@@ -120,7 +167,7 @@
           <span class="eyebrow" style="color:var(--teal-300);">Location</span>
           <h2>Positioned for How You Actually Live</h2>
         </div>
-        <p class="lede" style="color:rgba(251,250,246,0.72);">From the shipyard to the interstate, The Langford sits at the center of Hampton Roads.</p>
+        <p class="lede" style="color:rgba(251,250,246,0.85);">From the shipyard to the interstate, The Langford sits at the center of Hampton Roads.</p>
       </div>
       <div class="advantage-list reveal-stagger">
         <div class="advantage-item reveal" style="--i:0; border-color: var(--line-light);">
@@ -240,7 +287,7 @@
         <div class="reveal">
           <div class="skyline-rule" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
           <h2 style="margin-top:22px;">Be First on the List</h2>
-          <p class="lede" style="color:rgba(251,250,246,0.75); margin-top:16px;">Leasing details and floor plan pricing will be released to our interest list first. Sign up to be notified.</p>
+          <p class="lede" style="color:rgba(251,250,246,0.85); margin-top:16px;">Leasing details and floor plan pricing will be released to our interest list first. Sign up to be notified.</p>
         </div>
         <div class="reveal">
           <div class="form-row">
@@ -254,7 +301,7 @@
             </div>
           </div>
           <a href="contact.html#interest-form" class="btn btn-primary" style="width:100%; justify-content:center;">Continue to Full Form</a>
-          <p class="field-hint" style="margin-top:14px; color:rgba(251,250,246,0.5);">You'll confirm your details on the next step — no spam, ever.</p>
+          <p class="field-hint" style="margin-top:14px; color:rgba(251,250,246,0.85);">You'll confirm your details on the next step — no spam, ever.</p>
         </div>
       </div>
     </div>
@@ -267,10 +314,10 @@
     <div class="footer-grid">
       <div>
         <div class="brand" style="margin-bottom:18px;">
-          <img src="assets/img/logo.png" alt="The Langford logo" width="40" height="40">
+          <img src="assets/img/logo-white.png" alt="The Langford logo" width="40" height="40">
           <span class="brand-text"><span class="brand-the">The</span><span class="brand-name" style="color:#F6F4ED;">Langford</span></span>
         </div>
-        <p style="color:rgba(251,250,246,0.72); max-width:32ch;">A waterfront apartment community on the James River in Newport News, Virginia.</p>
+        <p style="color:rgba(251,250,246,0.85); max-width:32ch;">A waterfront apartment community on the James River in Newport News, Virginia.</p>
       </div>
       <div>
         <h4>Explore</h4>

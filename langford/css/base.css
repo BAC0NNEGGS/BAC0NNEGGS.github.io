@@ -16,11 +16,17 @@
   --lime-500: #B7C51F;
   --lime-600: #9CA818;
 
-  --off-white: #F6F4ED;
-  --paper: #FBFAF6;
-  --ink: #142229;
-  --ink-soft: #46595F;
-  --line: rgba(20, 34, 41, 0.12);
+  /* Warm resort neutrals — sand & gold accent, used alongside the coastal palette */
+  --sand-100: #F3ECDD;
+  --sand-200: #E9DCC2;
+  --gold-500: #C79A4B;
+  --gold-600: #A87E38;
+
+  --off-white: #F8F4EA;
+  --paper: #FCFAF3;
+  --ink: #1E2B33;
+  --ink-soft: #56636A;
+  --line: rgba(30, 43, 51, 0.12);
   --line-light: rgba(251, 250, 246, 0.24);
 
   --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
@@ -30,6 +36,13 @@
   --gutter: clamp(20px, 5vw, 64px);
 
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --shadow-soft: 0 12px 32px rgba(20, 34, 41, 0.08);
+  --shadow-card: 0 20px 48px rgba(10, 42, 61, 0.12);
+  --shadow-lift: 0 28px 64px rgba(10, 42, 61, 0.18);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -102,7 +115,7 @@ p { color: var(--ink-soft); }
   font-weight: 600;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: var(--teal-500);
+  color: var(--gold-600);
 }
 
 .eyebrow::before {

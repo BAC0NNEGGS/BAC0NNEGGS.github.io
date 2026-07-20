@@ -6,10 +6,13 @@
 .preview-card {
   border: 1px solid var(--line);
   background: var(--paper);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
   transition: box-shadow 0.3s var(--ease), transform 0.3s var(--ease);
 }
 .preview-card:hover {
-  box-shadow: 0 22px 40px rgba(10,42,61,0.10);
+  box-shadow: var(--shadow-card);
   transform: translateY(-4px);
 }
 .preview-media { aspect-ratio: 4/3; overflow: hidden; }
@@ -47,7 +50,7 @@
 .hours-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
 .hours-table td { padding: 10px 0; border-bottom: 1px solid var(--line-light); font-size: 0.92rem; }
 .hours-table td:last-child { text-align: right; color: var(--off-white); }
-.hours-table td:first-child { color: rgba(251,250,246,0.7); }
+.hours-table td:first-child { color: rgba(251,250,246,0.82); }
 
 /* Turnstile widget container spacing */
 .turnstile-wrap { margin: 6px 0 22px; }
